@@ -1,0 +1,82 @@
+{
+  "name": "pm-expo-starter-template",
+  "version": "0.0.1",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "dev": "bun scripts/write_env.ts && expo start --dev-client --clear",
+    "ios": "expo run:ios",
+    "android": "expo run:android",
+    "build:dev:android": "eas build -e development -p android --local --non-interactive",
+    "build:prev:android": "eas build -e preview -p android --local --non-interactive",
+    "build:prod:android": "eas build -e production -p android --local --non-interactive",
+    "build:dev:ios": "eas build -e development -p ios --local --non-interactive",
+    "build:prev:ios": "eas build -e preview -p ios --local --non-interactive",
+    "build:prod:ios": "eas build -e production -p ios --local --non-interactive",
+    "prebuild": "expo prebuild",
+    "bump": "bun scripts/bump_version.ts",
+    "ts": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@expo-google-fonts/montserrat": "^0.4.2",
+    "@expo/vector-icons": "^15.0.3",
+    "@formatjs/intl-datetimeformat": "6.18.2",
+    "@formatjs/intl-displaynames": "6.8.13",
+    "@formatjs/intl-getcanonicallocales": "2.5.6",
+    "@formatjs/intl-listformat": "7.7.13",
+    "@formatjs/intl-locale": "4.2.13",
+    "@formatjs/intl-numberformat": "8.15.6",
+    "@formatjs/intl-pluralrules": "5.4.6",
+    "@formatjs/intl-relativetimeformat": "11.4.13",
+    "@gorhom/bottom-sheet": "^5.2.6",
+    "@react-navigation/bottom-tabs": "^7.8.12",
+    "@tanstack/query-sync-storage-persister": "5.90.7",
+    "@tanstack/react-query": "5.90.5",
+    "@tanstack/react-query-persist-client": "5.90.7",
+    "clsx": "2.1.1",
+    "date-fns": "4.1.0",
+    "expo": "54.0.21",
+    "expo-asset": "^12.0.11",
+    "expo-constants": "~18.0.10",
+    "expo-dev-client": "~6.0.16",
+    "expo-font": "^14.0.10",
+    "expo-linking": "~8.0.8",
+    "expo-router": "~6.0.14",
+    "expo-splash-screen": "~31.0.10",
+    "expo-status-bar": "~3.0.8",
+    "expo-system-ui": "~6.0.8",
+    "expo-updates": "^29.0.15",
+    "ky": "1.12.0",
+    "nativewind": "latest",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-mmkv": "3.3.3",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-worklets": "0.5.1",
+    "tailwind-merge": "3.3.1",
+    "zod": "4.1.12",
+    "zustand": "^4.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@biomejs/biome": "2.2.6",
+    "@total-typescript/ts-reset": "0.6.1",
+    "@types/react": "~19.1.10",
+    "eas-cli": "^16.28.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "~5.9.2",
+    "yargs": "^18.0.0"
+  },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "listUnknownPackages": false
+      }
+    }
+  },
+  "private": true
+}

@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "PM Expo Starter Template",
+    "slug": "pm-expo-starter-template",
+    "version": "0.0.1",
+    "scheme": "com.pm.template",
+    "platforms": ["ios", "android"],
+    "plugins": [
+      "expo-dev-client",
+      "expo-router",
+      "expo-font",
+      [
+        "expo-asset",
+        {
+          "assets": ["./src/assets/images"]
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#f5f5f5",
+          "image": "./src/assets/appIcons/adaptive-icon.png",
+          "imageWidth": 150
+        }
+      ]
+    ],
+    "newArchEnabled": true,
+    "experiments": {
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    },
+    "orientation": "portrait",
+    "icon": "./src/assets/appIcons/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/appIcons/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pm.template",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "buildNumber": "1"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/appIcons/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.pm.template",
+      "versionCode": 1
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    },
+    "owner": "omarf045"
+  }
+}
